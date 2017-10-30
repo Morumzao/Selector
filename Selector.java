@@ -1,5 +1,3 @@
-package br.gov.mpog.spu.servicos.dominio.constantes;
-
 import java.util.*;
 
 public class Selector<T> {
@@ -15,7 +13,7 @@ public class Selector<T> {
         long score = 1L;
         for(int i = 0; i < collection.size(); i++){
             map.put(score, items[i]);
-            score = score<<1;
+            score <<= 1;
         }
     }
 
